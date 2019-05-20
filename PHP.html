@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>我的大学班级生活</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <style>
+        .layui-colla-content li{
+            list-style:decimal;
+        }
+        .layui-colla-content ol{
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+    <ul class="layui-nav" lay-filter="">
+        <li class="layui-nav-item"><a href="index.html">首页</a></li>
+        <li class="layui-nav-item"><a href="about.html">时间轴</a></li>
+        <li class="layui-nav-item"><a href="university.html">大学</a></li>
+        <li class="layui-nav-item  layui-this">
+            <a href="javascript:;">技能</a>
+            <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                <dd><a href="js.html">前端</a></dd>
+                <dd><a href="PHP.html">后端</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item"><a href="us.html">关于我</a></li>
+        <li class="layui-nav-item"><a href="callme.html">联系我</a></li>
+        <li class="layui-nav-item"><a href="life.html">音乐</a></li>
+    </ul>
+    <div class="layui-fluid" style="margin-left: 10px;margin-top: 30px; height: 1520px;">
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+            <legend>PHP是世界上最好的语言</legend>
+        </fieldset>
+
+        <div class="layui-collapse" lay-filter="test">
+            <div class="layui-colla-item">
+                <h2 class="layui-colla-title">PHP 的意思，它能干些什么？</h2>
+                <div class="layui-colla-content">
+                    <p>&nbsp;&nbsp;PHP（ Hypertext Preprocessor，超文本预处理器的字母缩写）是一种被广泛应用的开放
+                        源代码的多用途脚本语言，它可嵌入到 HTML 中，尤其适合 web 开发。
+                        PHP 能做任何事。PHP 主要是用于服务端的脚本程序，因此可以用 PHP 来完成任何
+                        其它的 CGI 程序能够完成的工作，例如收集表单数据，生成动态网页，或者发送／接收
+                        Cookies。但 PHP 的功能远不局限于此。
+                    </p>
+                    <p>&nbsp;&nbsp;PHP 脚本主要用于以下三个领域：</p>
+                    <ol>
+                        <li>服务端脚本。这是 PHP 最传统，也是最主要的目标领域。</li>
+                        <li>命令行脚本。可以编写一段 PHP 脚本，并且不需要任何服务器或者浏览器来运行它,命令行脚本。可以编写一段 PHP 脚本，并且不需要任何服务器或者浏览器来运行它。</li>
+                        <li>编写桌面应用程序。</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="layui-colla-item">
+                <h2 class="layui-colla-title">PHP中的框架是什么？</h2>
+                <div class="layui-colla-content">
+                    <p>&nbsp;&nbsp;框架就是通过提供一个开发Web程序的基本架构，PHP开发框架把PHPWeb程序开发摆到了流水线上。换句话说，PHP开发框架有助于促进快速软件开发（RAD），这节约了开发时间，有助于创建更为稳定的程序，并减少开发者的重复编写代码的劳动。框架专门用于为这些常用元素(数据库交互、表示层、应用程序逻辑)提供结构，以便可以花费更少的时间来编写数据库接口代码或者表示层接口，而花费更多的时间来编写应用程序本身。以这种方式分解应用程序，这种架构被称为模型-视图-控制器(Model-View-Controller，MVC)。模型(Model)指数据，视图(View)指表示层，而控制器(Controller)指应用程序逻辑或业务逻辑。———来自<a href="https://qq52o.me/">qq52o.me的博主沈唁</a></p>
+                </div>
+            </div>
+            <div class="layui-colla-item">
+                <h2 class="layui-colla-title">PHP新手必须认识的一些建议</h2>
+                <div class="layui-colla-content">
+                    <p>这些建议都是我自身亲历成长过程中积累的一些看法，仅作参考，相信百分之八十对你都有帮助！</p>
+                    <ol>
+                        <li>刚学习PHP的时候不要纠结使用哪个环境？appserv、wamp集成环境都不错</li>
+                        <li>编辑器很多种，但最好熟悉其中一种，养成手写代码习惯</li>
+                        <li>常用的函数要熟记</li>
+                        <li>环境报错全开启，把NOTICE屏蔽</li>
+                        <li>遇到报错要仔细看报错原因，行号，分析解决方法</li>
+                        <li>POST与GET的区别</li>
+                        <li>SESSION与COOKIE的区别</li>
+                        <li>不要使用COOKIE记录重要信息，如密码</li>
+                        <li>不要在数据库中明文存储密码</li>
+                        <li>传输中文一定要URLENCODE，JS异步提交同样</li>
+                        <li>Ajax响应页面最好使用JSON，特别是有中文或者特殊符号时</li>
+                        <li>知道require与include区别</li>
+                        <li>项目部署时相关配置信息文件不要在WEB根目录下</li>
+                        <li>永远不要相信用户输入的信息</li>
+
+                    </ol>
+                </div>
+            </div>
+            <div class="layui-colla-item">
+                <h2 class="layui-colla-title">PHP最容易出现的几个错误</h2>
+                <div class="layui-colla-content">
+                    <ol>
+                        <li>不转意html entities</li>
+                        <li>不转意SQL输入</li>
+                        <li>错误的使用HTTPheader 相关的函数: header(), session_start(), setcookie()</li>
+                        <li>Require 或 include 的文件使用不安全的数据</li>
+                        <li>语法错误</li>
+                        <li>很少使用或不用面向对象</li>
+                        <li>不使用framework/li>
+                        <li>不知道PHP中已经有的功能</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="layui-colla-item">
+                <h2 class="layui-colla-title">关于require()和include()</h2>
+                <div class="layui-colla-content">
+                    <ol>
+                        <li>require函数通常放在 PHP 程序的最前面</li>
+                        <li>include函数一般是放在流程控制的处理部分中</li>
+                        <li>require_once 语句和 require 语句完全相同，唯一区别是 PHP 会检查该文件是否已经被包含过，如果是则不会再次包含</li>
+                        <li>include在引入不存文件时产生一个警告且脚本还会继续执行，而require则会导致一个致命性错误且脚本停止执行</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="layui-colla-item">
+                <h2 class="layui-colla-title">双引号和单引号的区别</h2>
+                <div class="layui-colla-content">
+                    <ol>
+                        <li>双引号解释变量，单引号不解释变量</li>
+                        <li>双引号里插入单引号，其中单引号里如果有变量的话，变量解释</li>
+                        <li>双引号的变量名后面必须要有一个非数字、字母、下划线的特殊字符，或者用讲变量括起来，否则会将变量名后面的部分当做一个整体，引起语法错误</li>
+                        <li>双引号解释转义字符，单引号不解释转义字符，但是解释'\和\</li>
+                        <li>能使单引号字符尽量使用单引号，单引号的效率比双引号要高（因为双引号要先遍历一遍，判断里面有没有变量，然后再进行操作，而单引号则不需要判断）</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-footer" style="text-align: center;    left: 0px;font-size: 16px">
+            © 陈乾运
+        </div>
+
+    </div>
+
+    <script src="./layui/layui.js"></script>
+    <script>
+        layui.use(['layer', 'element', 'carousel'], function(){
+            var layer = layui.layer
+                ,element = layui.element;
+
+        });
+    </script>
+</body>
+</html>

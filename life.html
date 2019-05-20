@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>生活 - 我的大学班级生活</title>
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .music{
+      margin-top: 0;
+      margin-left: 0%;
+      width: 30%;
+      height: 850px;
+    }
+    .bjtp{
+      background-image: url("./layui/images/2.jpg");
+    }
+  </style>
+</head>
+<body class="layui-layout-body bjtp">
+<div class="layui-layout layui-layout-admin">
+<ul class="layui-nav" lay-filter="">
+  <li class="layui-nav-item"><a href="index.html">首页</a></li>
+  <li class="layui-nav-item"><a href="about.html">时间轴</a></li>
+  <li class="layui-nav-item"><a href="university.html">大学</a></li>
+  <li class="layui-nav-item">
+    <a href="javascript:;">技能</a>
+    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+      <dd><a href="js.html">前端</a></dd>
+      <dd><a href="PHP.html">后端</a></dd>
+    </dl>
+  </li>
+  <li class="layui-nav-item"><a href="us.html">关于我</a></li>
+  <li class="layui-nav-item"><a href="callme.html">联系我</a></li>
+  <li class="layui-nav-item layui-this"><a href="life.html">音乐</a></li>
+</ul>
+<!--
+<div class="layui-carousel" id="test1" lay-filter="test1">
+  <div carousel-item="">
+    <div><img src="./layui/images/th.jfif"></div>
+    <div><img src="./layui/images/th1.jfif"></div>
+    <div><img src="./layui/images/th2.jfif"></div>s
+  </div>
+</div>
+-->
+  <!--
+  <audio src="./layui/music/Large%20bowl%20of%20width.mp3" autoplay="autoplay" controls="controls" class="music">
+    您的浏览器不支持 audio 标签。
+  </audio>
+  -->
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" class="music" src="//music.163.com/outchain/player?type=4&id=792014412&auto=1&height=430"></iframe>
+  <div class="layui-footer" style="text-align: center;    left: 0px;font-size: 16px">
+    © 陈乾运
+  </div>
+</div>
+<script>
+  alert("请在连接了网络的网络的情况下打开本页面否者不会出现音乐");
+</script>
+
+<!--
+<script src="./layui/layui.js"></script>
+<script>
+layui.use(['layer', 'element', 'carousel'], function(){
+  var layer = layui.layer
+  ,element = layui.element
+  ,carousel = layui.carousel;
+    
+  carousel.render({
+    elem: '#test1'
+    ,arrow: 'always'
+    ,width: 'auto'
+    ,height: '750px'
+    ,interval: 3000
+    ,anim: 'fade'
+  });
+ 
+});
+</script
+-->
+</body>
+</html>
